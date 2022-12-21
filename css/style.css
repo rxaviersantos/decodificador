@@ -15,7 +15,27 @@
     --font-action: "Muli", serif;
 }
 
-html{
-    scroll-behavior: smooth;
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+/* Light blue/light-blue-100 */
+    background: #F3F5FC;
+}
+.cabecalho{
+    position: absolute;
+    width: 680px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
 }
 
+.logo{
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+}
