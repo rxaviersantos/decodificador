@@ -15,27 +15,118 @@
     --font-action: "Muli", serif;
 }
 
-body{
-    position: relative;
-    width: 1440px;
-    height: 1024px;
-/* Light blue/light-blue-100 */
-    background: #F3F5FC;
+:root{
+    --cor-primary: #25252e;
+    --cor-secundary: #515162;
+    --cor-button1: #d01e2a;
+    --cor-button2:#fbc8c9;
+    --cor-desktop: #F3F5FC;
+    --cor-output:#FFFFFF;
 }
-.cabecalho{
-    position: absolute;
+
+body{
+    /* position: relative;
+    width: 1440px;
+    height: 1024px; */
+/* Light blue/light-blue-100 */
+    background: var(--cor-desktop);
+
+}
+.header{
+    font-family: var(--font-primary);
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    /* position: absolute;
     width: 680px;
     height: 48px;
     left: 240px;
-    top: 168px;
+    top: 168px; */
 }
 
-.logo{
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
+.header h1{
+    color: var(--cor-primary);
+    font-size: 1.8rem;
+}
 
+.header img{
+    max-width: 50rem;
+    max-height: 50rem;
+    width: auto;
+    height: auto;
+}
+
+.input {
+    /* display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%; */
+    position: absolute;
+    width: 680px;
+    height: 288px;
+    left: 240px;
+    top: 168px;
+    font-family: var(--font-secundary);
+    font-style: normal;
+    font-weight: 600;
+}
+
+#input-texto{
+    width: 22rem;
+    height: 24rem;
+    font-size: 1.3rem;
+    color: var(--cor-secundary);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 1.5rem;
+    text-transform: uppercase;
+}
+
+#output{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    /* White */
+    background:var(--cor-output);
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    /* 
+    display: flex;
+    flex-direction: ;
+    border: 3px solid var(--cor-primary);
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    margin-right: 3%;
+ */
+}
+
+#output h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cor-primary);
+    font-family: var(--font-primary);
+}
+
+#output span{
+    font-size: 1rem;
+    text-align: center;
+    font-family: var(--font-secundary);
+}
+#output img{
+    /* position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 60px;
+    top: 283px; */
+    max-width: 300px;
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+    
 }
