@@ -128,5 +128,8 @@ body{
     width: auto;
     height: auto;
     margin-top: 4%;
-    
+}
+
+.button{
+   display: flex; 
 }
