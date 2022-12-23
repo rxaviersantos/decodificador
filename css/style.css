@@ -16,12 +16,19 @@
 }
 
 :root{
-    --cor-primary: #25252e;
-    --cor-secundary: #515162;
-    --cor-button1: #002551;
-    --cor-button2:#fbc8c9;
+    --cor-titulo: #44403C;
+    --cor-subtitulo: #57534E;
+    --cor-texto: #78716C;
+    --cor-button1: #57534E;
+    --cor-button2:#A8A29E;
+    --cor-button3:#A8A29E;
     --cor-desktop: #F3F5FC;
     --cor-output:#FFFFFF;
+    --cor-detalhe:#FDA4AF;
+    --cor-borda:#A8A29E;
+    --cor-borda2:#44403C;
+    --cor-textorodape:#272727;
+    --cor-sociallist:#a7a7a7;
 }
 
 body{
@@ -35,6 +42,9 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 2%;
+    height: 18rem;
+    left: 18rem;
+    
 
     /* gap: 40px;
     flex-direction: column;
@@ -52,15 +62,15 @@ body{
 }
 
 .header h1{
-    color: var(--cor-primary);
+    color: var(--cor-titulo);
     font-family: var(--font-primary);
     font-weight: 700;
     /* margin-top: auto; */
 }
 
 .header img{
-    max-width: 70rem;
-    max-height: 70rem;
+    max-width: 80rem;
+    max-height: 80rem;
     width: auto;
     height: auto;
 }
@@ -69,6 +79,8 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 2% 0 0 4%;
+    
+    
     /* position: absolute;
     width: 680px;
     height: 48px;
@@ -101,7 +113,7 @@ body{
     width: 24rem;
     height: 20rem;
     font-size: 1.2rem;
-    color: var(--cor-secundary);
+    color: var(--cor-texto);
     background: transparent;
     box-shadow: none;
     border: none;
@@ -131,7 +143,7 @@ body{
 #output{
     display: flex;
     flex-direction: column;
-    border: 0.1rem solid var(--cor-secundary);
+    border: 0.1rem solid var(--cor-borda);
     align-items: center;
     border-radius: 32px;
     width: 400px;
@@ -157,7 +169,7 @@ body{
 #output h2{
     text-align: center;
     font-size: 1.5rem;
-    color: var(--cor-primary);
+    color: var(--cor-subtitulo);
     font-family: var(--font-primary);
     font-weight: 700;
 
@@ -177,7 +189,7 @@ body{
     text-align: center;
     font-family: var(--font-secundary);
     font-weight: 300;
-    color: var(--cor-secundary);
+    color: var(--cor-texto);
 }
 #output img{
     /* position: absolute;
@@ -190,42 +202,106 @@ body{
     max-width: 250px;
     width: auto;
     height: auto;
-    margin-top: 90%;
+    margin-top: 50%;
     
 }
 
-.msg-btn{
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-    position: absolute;
-    width: 262px;
-    height: 18px;
-    left: 240px;
-    top: 851px;
-
-}
-
-.button{
+.button-container{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 2rem;
-
+    gap: 24px;
+    
     position: absolute;
     width: 680px;
     height: 67px;
     left: 240px;
     top: 885px;
+    
+
+}
+
+.btn-criptografar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    
+    width: 328px;
+    height: 67px;
+    
+    background: var(--cor-button1);
+    border: 1px solid var(--cor-borda2);
+    border-radius: 24px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    cursor: pointer;
+}
+
+.btn-descriptografar{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+    margin-left: 4%;
+
+    background: var(--cor-button2);
+    border: 1px solid var(--cor-borda2);
+    border-radius: 24px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    cursor: pointer;
+
+}
+
+.btn-copiar{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 1032px;
+    top: 885px;
+    margin-left: 30%;
+
+    border: 1px solid var(--cor-borda);
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.btn-criptografar:hover{
+    border: 2px solid var(--cor-detalhe);
+    transition: 0.5s all;
+}
+
+.btn-descriptografar:hover{
+    border: 2px solid var(--cor-detalhe);
+    transition: 0.5s all;
 }
 
 footer{
+    display: flex;
     width: 100;
     height: 7rem;
-    background-color: #272727;
+    background-color: var(--cor-textorodape);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,13 +315,13 @@ footer{
 
 .footer-content p{
     font-family: var(--font-secundary);
-    color: #a7a7a7;
+    color: var(--cor-sociallist);
     font-size: 1.2rem;
 }
 
 .social-list a{
     margin: 0 2rem;
-    color: #a7a7a7;
+    color: var(--cor-sociallist);
     font-size: 1.3rem;
 }
 
