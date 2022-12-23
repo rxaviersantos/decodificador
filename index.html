@@ -6,48 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/image/icon.png" type="image/x-icon">
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <main class="container">
+    <main class="main-container">
         <header class="header">
             <img src="/image/logo.png" alt="logo-decodificador">
-            <!-- <h1>Mensagens Codificadas</h1> -->
+            <h1>Mensagens Codificadas</h1>
         </header>
 
-        <div class="input">
-            <textarea name="" id="input-texto" placeholder="Digite seu texto aqui..."></textarea>
-            <p>! Apenas letras maiúsculas e sem acento.</p>
-        </div>
+        <div class="input-container">
+            <div class="div-input">
+                <textarea name="" id="input-texto" placeholder="Digite seu texto aqui..."></textarea>
+                <p>! Apenas letras maiúsculas e sem acento.</p>
+            </div>
 
-        <div id="output">
-            <img src="/image/output.png" alt="">
-            <h2>Sua mensagem aparecerá aqui</h2>
-            <span>Digite um texto que deseja criptografar ou descriptografar.</span>
+            <div id="output">
+                <img src="/image/mensagem.png" alt="imagem visualizando menssagem">
+                <h2>Sua mensagem aparecerá aqui</h2>
+                <span>Digite um texto que deseja criptografar ou descriptografar.</span>
+            </div>
         </div>
 
         <div class="button">
-            <button class="btn-criptografar">Criptografar</button>
-            <button class="btn-descriptografar">Descriptografar</button>
+            <div class="button-container">
+                <button class="btn-criptografar">Criptografar</button>
+                <button class="btn-descriptografar">Descriptografar</button>
+            </div>
         </div>
     </main>
-    <div>
-        <footer>
-            <div class="footer-content">
-                <p>
-                    Copyright &copy; 2022, Rodrigo Xavier - Todos os direitos reservados
-                </p>
-                <div class="social-list">
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    </ul>
-                </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>
+                Copyright &copy; 2022, Rodrigo Xavier - Todos os direitos reservados
+            </p>
+            <div class="social-list">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
 </body>
 <script src="/js/script.js"></script>
 </html>
