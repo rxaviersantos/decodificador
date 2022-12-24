@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:ital,wght@0,300;0,400;1,300&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Poppins:wght@400;600;700&family=Roboto:wght@300&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --font-primary: "Baloo da 2", serif;
+    --font-secundary: "Josefin Slab", serif;
+    --font-action: "Muli", serif;
+}
+
+:root{
+    --cor-titulo: #292524;
+    --cor-subtitulo: #57534E;
+    --cor-texto: #78716C;
+    --cor-button1: #272727;
+    --cor-button2:#A8A29E;
+    --cor-button3:#A8A29E;
+    --cor-desktop: #F3F5FC;
+    --cor-output:#FFFFFF;
+    --cor-detalhe:#FDA4AF;
+    --cor-borda:#A8A29E;
+    --cor-borda2:#44403C;
+    --cor-rodape:#272727;
+    --cor-sociallist:#a7a7a7;
+}
+
+body{
+    background: var(--cor-desktop);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.header h1{
+    color: var(--cor-titulo);
+    font-family: var(--font-primary)
+}
+
+.header img{
+    max-width: 60rem;
+    max-height: 60rem;
+    width: auto;
+    height: auto;
+}
