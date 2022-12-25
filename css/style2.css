@@ -43,7 +43,8 @@ body{
 
 .header h1{
     color: var(--cor-titulo);
-    font-family: var(--font-primary)
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
 }
 
 .header img{
@@ -51,4 +52,15 @@ body{
     max-height: 60rem;
     width: auto;
     height: auto;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+#input-container .div-input{
+    width: 400px;
+    height: 330px;
 }
