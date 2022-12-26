@@ -39,12 +39,14 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 2%;
+    margin-bottom: 10px;
 }
 
 .header h1{
     color: var(--cor-titulo);
     font-family: var(--font-primary);
     font-size: 1.5rem;
+   
 }
 
 .header img{
@@ -63,4 +65,154 @@ body{
 #input-container .div-input{
     width: 400px;
     height: 330px;
+}
+
+#input-texto{
+    width: 345px;
+    height: 330px;
+    font-size: 1.3rem;
+    color: var(--cor-titulo);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+#output{
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid var(--cor-borda2);
+    border-radius: 1.5rem;
+    width: 22rem;
+    height: 40rem;
+    margin-right: 3%;
+    padding-top: 10rem;
+    background: var(--cor-output);
+}
+
+#output h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cor-titulo);
+    font-family: var(--font-primary)
+}
+
+#output span{
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: var(--font-secundary);
+    color: var(--cor-subtitulo);
+}
+
+#output img{
+    max-width: 300px;
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+}
+
+.button-container{
+    /* border: 2px solid var(--cor-titulo);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--cor-button1);
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer; */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+
+.btn-criptografar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: var(--cor-button1);
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.btn-criptografar p{
+    width: 280px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--cor-output);
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.btn-descriptografar{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid var(--cor-borda2);
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.btn-descriptografar p{
+    width: 280px;
+    height: 19px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* Dark blue/dark-blue-300 */
+
+    color: #0A3871;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
 }
