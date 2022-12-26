@@ -49,8 +49,8 @@ body{
 }
 
 .header img{
-    max-width: 60rem;
-    max-height: 60rem;
+    max-width: 65rem;
+    max-height: 65rem;
     width: auto;
     height: auto;
 }
@@ -61,7 +61,7 @@ body{
     padding: 2% 0 0 4%;
 }
 
-#input-container .div-input{
+#input-container .input{
     width: 400px;
     height: 330px;
 }
@@ -77,6 +77,13 @@ body{
     outline: 0;
     padding: 1rem;
     text-transform: uppercase;
+}
+
+.input-container p{
+    padding: 2% 0 0 5%;
+    margin-top: 8rem;
+    width: auto;
+    height: auto;
 }
 
 #output{
@@ -271,4 +278,11 @@ footer{
 
 .social-list ul{
     display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    body, .main-container, .input-container, .input-texto, #output, .button-container  {
+        width: 100%;
+    }
+    
 }
