@@ -54,6 +54,8 @@ body{
     max-height: 65rem;
     width: auto;
     height: auto;
+    width: 120px;
+    height: 48px;
 }
 
 .input-container{
@@ -81,12 +83,12 @@ body{
 }
 
 .input-container p{
+    display: flex;
     padding: 2% 0 0 5%;
     margin-top: 20rem;
     width: auto;
     height: auto;
     margin-left: 8rem;
-    align-items: center;    
 }
 
 #output{
