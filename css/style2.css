@@ -61,7 +61,7 @@ body{
 .input-container{
     display: flex;
     justify-content: space-between;
-    padding: 2% 0 0 4%;
+    padding: 2% 0 0 12%;
 }
 
 .input-container .input{
@@ -88,7 +88,7 @@ body{
     margin-top: 20rem;
     width: auto;
     height: auto;
-    margin-left: 8rem;
+    /* margin-left: 8rem; */
 }
 
 #output{
