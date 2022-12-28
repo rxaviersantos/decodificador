@@ -24,7 +24,7 @@
     --cor-button3:#A8A29E;
     --cor-desktop: #F3F5FC;
     --cor-output:#FFFFFF;
-    --cor-detalhe:#FDA4AF;
+    --cor-detalhe:#008000;
     --cor-borda:#A8A29E;
     --cor-borda2:#44403C;
     --cor-rodape:#272727;
@@ -32,187 +32,106 @@
 }
 
 body{
-    /* position: relative;
-    width: 1440px;
-    height: 1024px; */
     background: var(--cor-desktop);
 }
 
-.header {
+.header{
     display: flex;
     justify-content: space-between;
     padding: 2%;
-    height: 18rem;
-    left: 18rem;
-    
-
-    /* gap: 40px;
-    flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
-    width: 120px;
-    height: 48px;
-    left: 40px;
-    top: 40px;
-
-    max-width: 50rem;
-    max-height: 50rem;
-    width: auto;
-    height: auto; */
+    margin-bottom: 10px;
 }
 
 .header h1{
     color: var(--cor-titulo);
     font-family: var(--font-primary);
-    font-weight: 700;
-    /* margin-top: auto; */
+    font-size: 1.9rem;
+    margin-right: 4%;
 }
 
-.header img{
-    max-width: 80rem;
-    max-height: 80rem;
+.main-container .header img{
+    max-width: 65rem;
+    max-height: 65rem;
     width: auto;
     height: auto;
+    width: 120px;
+    height: 48px;
 }
 
-.input-container {
+.input-container{
     display: flex;
     justify-content: space-between;
-    padding: 2% 0 0 4%;
-    
-    
-    /* position: absolute;
-    width: 680px;
-    height: 48px;
-    left: 240px;
-    top: 168px;
-
-    font-style: normal;
-    font-weight: 600;
-    font-family: var(--font-secundary);
-    font-size: 1.3rem;
-    line-height: 150%;
-    color: var(--cor-secundary); */
+    padding: 2% 0 0 12%;
 }
 
-.input-container .div-input{
-    width: 400px;
-    height: 330px;
-
-    /* font-size: 1.3rem;
-    color: var(--cor-secundary);
-    background: transparent;
-    box-shadow: none;
-    border: none;
-    outline: 0;
-    padding: 1.5rem;
-    text-transform: uppercase; */
+.input-container .input{
+    width: 60rem;
+    height: 55rem;
 }
 
 #input-texto{
-    width: 24rem;
-    height: 20rem;
-    font-size: 1.2rem;
-    color: var(--cor-texto);
+    width: 345px;
+    height: 330px;
+    font-size: 1.3rem;
+    color: var(--cor-titulo);
     background: transparent;
     box-shadow: none;
     border: none;
     outline: 0;
     padding: 1rem;
+    /* text-align: center; */
     text-transform: uppercase;
-    font-weight: 300;
 }
 
-/* .input p{
-    width: 30rem;
-    height: 18px;
-
-    font-family: var(--font-action);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-
-    color: var(--cor-secundary);
-    opacity: 0.8;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-} */
-
-#output{
+.input-container p{
     display: flex;
-    flex-direction: column;
-    border: 0.1rem solid var(--cor-borda);
-    align-items: center;
-    border-radius: 32px;
-    width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
-    margin-right: 3%;
-    background:var(--cor-output);
-    padding: 0px;
-    gap: 16px;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    
-    
-    /* ;
-    
-    position: absolute;
-    
-     */
-    
-
-}
-
-#output h2{
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--cor-subtitulo);
-    font-family: var(--font-primary);
-    font-weight: 700;
-
-
-    /* width: 336px;
-    height: 58px;
-    font-style: normal;
-    line-height: 120%;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0; */
-}
-
-#output span{
-    font-size: 1.2rem;
-    text-align: center;
-    font-family: var(--font-secundary);
-    font-weight: 300;
-    color: var(--cor-texto);
-}
-#output img{
-    /* position: absolute;
-    width: 336px;
-    height: 304px;
-    left: 60px;
-    top: 283px; */
-    
-    max-width: 250px;
-    max-width: 250px;
+    padding: 2% 0 0 5%;
+    margin-top: 20rem;
     width: auto;
     height: auto;
-    margin-top: 50%;
-    
+    /* margin-left: 8rem; */
 }
 
-.button-container{
+#output-saida{
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid var(--cor-borda2);
+    border-radius: 1.5rem;
+    width: 25rem;
+    height: 43rem;
+    margin-right: 3%;
+    padding-top: 10rem;
+    background: var(--cor-output);
+}
+
+#output-saida h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cor-titulo);
+    font-family: var(--font-primary)
+}
+
+#output-saida span{
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: var(--font-secundary);
+    color: var(--cor-subtitulo);
+}
+
+#output-saida img{
+    max-width: 310px;
+    max-width: 310px;
+    width: auto;
+    height: auto;
+    margin-top: 5%;
+}
+
+.btn-container{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-    
     position: absolute;
     width: 680px;
     height: 67px;
@@ -220,88 +139,124 @@ body{
     top: 885px;
 }
 
-.btn-criptografar{
+.button-criptografar{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
     gap: 8px;
-    
     width: 328px;
     height: 67px;
-    
     background: var(--cor-button1);
-    border: 1px solid var(--cor-borda2);
     border-radius: 24px;
-    
     flex: none;
     order: 0;
     flex-grow: 0;
-    color:  var(--cor-output);
-    
     cursor: pointer;
 }
 
+.button-criptografar p{
+    width: 280px;
+    height: 19px;
+    font-family: var(--font-primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--cor-output);
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
 
-.btn-descriptografar{
+.button-descriptografar{
     box-sizing: border-box;
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
     gap: 8px;
-
     width: 328px;
     height: 67px;
-    margin-left: 4%;
-
-    background: var(--cor-button2);
     border: 1px solid var(--cor-borda2);
     border-radius: 24px;
-
     flex: none;
     order: 1;
     flex-grow: 0;
     cursor: pointer;
-
 }
 
-.btn-copiar{
-    box-sizing: border-box;
+.button-descriptografar p{
+    width: 280px;
+    height: 19px;
+    font-family: var(--font-primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--cor-titulo);
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
 
-    display: flex;
+/* Botão copiar só irá aparecer quando a menssagem for códificada */
+.button-copiar{
+    box-sizing: border-box;
+    /* display: flex; */
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
     gap: 8px;
-
-    position: absolute;
-    width: 336px;
+    width: 328px;
     height: 67px;
-    left: 1032px;
-    top: 885px;
-    margin-left: 30%;
-
-    border: 1px solid var(--cor-borda);
+    margin-left: 7.5%;
+    margin-bottom: 10%;
+    border: 1px solid var(--cor-borda2);
     border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    text-align: center;
     cursor: pointer;
 }
 
-.btn-criptografar:hover{
-    border: 2px solid var(--cor-detalhe);
-    transition: 0.5s all;
+.buttn-copiar p{
+    width: 280px;
+    height: 19px;
+    font-family: var(--font-primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--cor-titulo);
+    flex: none;
+    order: 0;
+    flex-grow: 1;
 }
 
-.btn-descriptografar:hover{
-    border: 2px solid var(--cor-detalhe);
-    transition: 0.5s all;
+.button-criptografar:hover {
+    border: 1px solid var(--cor-detalhe);
+    transition: 0.4s all;
+}
+
+.bbutton-descriptografar:hover{
+    border: 1px solid var(--cor-detalhe);
+    transition: 0.4s all;
+}
+
+.button-copiar:hover{
+    border: 1px solid var(--cor-detalhe);
+    transition: 0.4s all;
 }
 
 footer{
     display: flex;
     width: 100;
-    height: 7rem;
+    height: 10rem;
     background-color: var(--cor-rodape);
     display: flex;
     justify-content: center;
@@ -328,4 +283,11 @@ footer{
 
 .social-list ul{
     display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    body, .main-container, .input-container, .input-texto, #output, .button-container  {
+        width: 100%;
+    }
+    
 }
