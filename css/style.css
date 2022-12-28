@@ -285,9 +285,23 @@ footer{
     display: flex;
 }
 
-@media screen and (max-width: 768px) {
-    body, .main-container, .input-container, .input-texto, #output, .button-container  {
-        width: 100%;
+@media screen and (max-width: 900px) {
+    .header{
+        display: flex;
+        justify-content: left;
+        padding: 6%;
     }
-    
+    .header h1{
+        font-size: 1.9rem;
+    }
+    .main-container .header img{
+        max-width: 90px;
+        max-height: 40px;
+        width: auto;
+        height: auto;
+    }
+    .input-container .input{
+        width: 35rem;
+        height: 25rem;
+    }
 }
