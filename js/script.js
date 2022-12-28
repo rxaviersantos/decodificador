@@ -1,4 +1,4 @@
-var input = document.querySelector("#input-texto");
+var input = document.querySelector("#input-text");
 var outinput = document.querySelector("#output-saida");
 
 function criptografar() {
@@ -12,7 +12,7 @@ function criptografar() {
     .replace(/u/g, "ufat");
 
   document.getElementById("output-saida").innerHTML =
-    '<textera readonly id="input-texto">' +
+    '<textera readonly id="input-text">' +
     resultadoCriptografia +
     "</textera>" +
     '<button class="button-copiar" id="copiar" onclick="copiar()">Copiar</button>';
@@ -29,14 +29,14 @@ function descriptografar() {
     .replace(/ufat/g, "u");
 
   document.getElementById("output-saida").innerHTML =
-    '<textera readonly id="input-texto">' +
+    '<textera readonly id="input-text">' +
     resultadoDescriptografia +
     "</textera>" +
     '<button class="button-copiar" id="copiar" onclick="copiar()">Copiar</button>';
 }
 
 function copiar() {
-  var texto = document.getElementById("input-texto");
+  var texto = document.getElementById("input-text");
 
   texto.select();
   document.execCommand("copy");

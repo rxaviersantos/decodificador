@@ -36,6 +36,7 @@ body{
 }
 
 .header{
+
     display: flex;
     justify-content: space-between;
     padding: 2%;
@@ -69,7 +70,7 @@ body{
     height: 55rem;
 }
 
-#input-texto{
+#input-text{
     width: 345px;
     height: 330px;
     font-size: 1.3rem;
@@ -85,6 +86,8 @@ body{
 
 .input-container p{
     display: flex;
+    font-family: var(--font-secundary);
+    color: var(--cor-subtitulo);
     padding: 2% 0 0 5%;
     margin-top: 20rem;
     width: auto;
@@ -213,7 +216,8 @@ body{
     width: 328px;
     height: 67px;
     margin-left: 7.5%;
-    margin-bottom: 10%;
+    margin-bottom: 14.5%;
+    margin-top: auto;
     border: 1px solid var(--cor-borda2);
     border-radius: 24px;
     flex: none;
@@ -243,7 +247,7 @@ body{
     transition: 0.4s all;
 }
 
-.bbutton-descriptografar:hover{
+.button-descriptografar:hover{
     border: 1px solid var(--cor-detalhe);
     transition: 0.4s all;
 }
@@ -285,16 +289,16 @@ footer{
     display: flex;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
     .header{
         display: flex;
-        justify-content: left;
+        justify-content:left;
         padding: 6%;
     }
     .header h1{
         font-size: 1.9rem;
     }
-    .main-container .header img{
+    .header img{
         max-width: 90px;
         max-height: 40px;
         width: auto;
@@ -304,4 +308,82 @@ footer{
         width: 35rem;
         height: 25rem;
     }
+    .input-container{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 2% 0 0 12%;
+    }
+    #input-text{
+        width: 400px;
+        height: 330px;
+        font-size: 20px;
+    }
+    #output-saida{
+        width: 60%;
+        height: 65%;
+        margin-top: 15%;
+        margin-right: 3%;
+    }
+    #output-saida img{
+        max-width: 250px;
+        max-height: 200px;
+        width: auto;
+        height: auto;
+        margin-top: 4%;
+        margin-left: 25%;
+        margin: unset;
+    }
+    .btn-container{
+        width: 150px;
+        height: 50px;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
 }
+
+@media (max-width:600px){
+    #output-saida{
+       width: 60%;
+       height: 75%;
+       margin-top: 15%;
+    }
+ 
+    #input-text{
+       width: 200px;
+       height: 330px;
+       font-size: 20px;
+   }
+ 
+    #output-saida img{
+       max-width:200px;
+       max-height:150px;
+       width: auto;
+       height: auto;
+       margin-top: 4%;
+       margin-left: 5%;
+    }
+ 
+    .btn-container{
+       width: 200px;
+       flex-wrap: wrap;
+    }
+ 
+    .btn-container button{
+       width: 110px;
+       height: 50px;
+       margin-left: 30%;
+       margin-top: 5%;
+ 
+    }
+ 
+    .input p{
+       font-size: 10px;
+    }
+ 
+    .footer h3{
+       font-size: 14px;
+   }
+ 
+ 
+ }
