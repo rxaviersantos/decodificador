@@ -35,7 +35,10 @@ Por exemplo:
 
 ### Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![image](https://user-images.githubusercontent.com/85380530/209748137-a9566b6d-7be1-4ed4-98ec-7864619bebce.png)
+![image](https://user-images.githubusercontent.com/85380530/209749167-405416cf-8f76-46b3-999c-21d38a838a4c.png)
+
+
 
 
 
