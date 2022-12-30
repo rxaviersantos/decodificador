@@ -233,7 +233,7 @@ body{
     cursor: pointer;
 }
 
-.buttn-copiar p{
+.button-copiar p{
     width: 280px;
     height: 19px;
     font-family: var(--font-primary);
@@ -295,7 +295,7 @@ footer{
     display: flex;
 }
 
-@media (max-width: 900px){
+@media only screen and (max-width: 900px){
     .header{
         display: flex;
         justify-content: left;
@@ -335,7 +335,7 @@ footer{
         width: 16rem;
         height: 22rem;
         margin: revert;
-        margin-top: 3rem;
+        margin-top: -3rem;
     }
     #output-saida img{
         width: 10rem;
@@ -348,30 +348,78 @@ footer{
     #output-saida span{
         font-size: 0.9rem;
     }
+    .input-container p{
+        width: 18rem;
+        height: 0.7rem;
+        margin-left: 80%;
+        font-family: var(--font-secundary);
+        font-size: 0.9rem;
+        color: var(--cor-subtitulo);
+    }
     .btn-container{
-        width: 150px;
-        height: 50px;
-        margin-left: 5%;
-        margin-top: 5%;
+        width: 25rem;
+        height: auto;
+        margin-left: 20%;
+        justify-content: end;
+        margin-top: -12rem;
+        display: block;
     }
     .btn-container button{
-        width: 110px;
-        height: 50px;
-        margin-left: 30%;
+        width: 13rem;
+        height: 2rem;
+        margin-left: 10%;
         margin-top: 5%;
         font-family: var(--font-primary);
+        cursor: pointer;
     }
     .button-criptografar p{
         font-family: var(--font-primary);
-        /* line-height: 19px; */
-        /* text-align: center; */
         color: var(--cor-output);
-        margin-left: -7rem;
+        margin-left: -3.5rem;
         font-size: 0.8rem;
         margin-top: -0.5rem;
-      
-}
+    }
+    .button-descriptografar p{
+        color: var(--cor-titulo);
+        margin-left: -3.5rem;
+        font-size: 0.8rem;
+        margin-top: -0.5rem;
+        font-family: var(--font-primary);
+    }
+    .button-copiar {
+        width: 13rem;
+        height: 2rem;
+        margin-left: 10%;
+        /* margin-top: 5%; */
+        font-family: var(--font-primary);
+        cursor: pointer;
+    }
+    /* #copiar.button-copiar {
+        color: var(--cor-titulo);
+        font-size: 0.8rem;
+        margin-top: -0.5rem;
+        font-family: var(--font-primary);
+    } */
+    .footer-content p{
+        font-family: var(--font-secundary);
+        color: var(--cor-sociallist);
+        font-size: 1rem;
+        text-align: center;
+        margin-left: -8rem;
+    }
     
+    .social-list a{
+        margin: 0 2rem;
+        color: var(--cor-sociallist);
+        font-size: 0.9rem;
+    }
+    
+    .social-list ul{
+        display: flex;
+    }
+    .social-list{
+        margin-right: 2rem;
+    }
 }
 
 
