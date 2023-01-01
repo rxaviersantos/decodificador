@@ -15,7 +15,7 @@ function criptografar() {
     '<textera readonly id="input-text">' +
     resultadoCriptografia +
     "</textera>" +
-    '<button class="button-copiar" id="copiar" onclick="copiar()">Copiar</button>';
+    '<button class="button-copiar" id="copiar" onclick="copiar()"><P>Copiar<p/></button>';
 }
 
 function descriptografar() {
@@ -32,7 +32,7 @@ function descriptografar() {
     '<textera readonly id="input-text">' +
     resultadoDescriptografia +
     "</textera>" +
-    '<button class="button-copiar" id="copiar" onclick="copiar()">Copiar</button>';
+    '<button class="button-copiar" id="copiar" onclick="copiar()"><p>Copiar</p></button>';
 }
 
 function copiar() {
