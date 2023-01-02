@@ -403,6 +403,9 @@ footer{
         /* margin-top: -0.5rem; */
         font-family: var(--font-primary);
     }
+    #copiar.button-copiar p{
+        font-size: 1rem;
+    }
     .footer-content p{
         /* width: 13rem; */
         font-family: var(--font-secundary);

@@ -1,10 +1,10 @@
-var input = document.querySelector("#input-text");
-var outinput = document.querySelector("#output-saida");
+let input = document.querySelector("#input-text");
+let outinput = document.querySelector("#output-saida");
 
 function criptografar() {
-  var texto = input.value;
+  let texto = input.value;
 
-  var resultadoCriptografia = texto
+  let resultadoCriptografia = texto
     .replace(/e/g, "enter")
     .replace(/i/g, "imes")
     .replace(/a/g, "ai")
@@ -15,13 +15,13 @@ function criptografar() {
     '<textera readonly id="input-text">' +
     resultadoCriptografia +
     "</textera>" +
-    '<button class="button-copiar" id="copiar" onclick="copiar()"><P>Copiar<p/></button>';
+    '<button class="button-copiar" id="copiar" onclick="copiar()">Copiar</button>';
 }
 
 function descriptografar() {
-  var texto = input.value;
+  let texto = input.value;
 
-  var resultadoDescriptografia = texto
+  let resultadoDescriptografia = texto
     .replace(/enter/g, "e")
     .replace(/imes/g, "i")
     .replace(/ai/g, "a")
@@ -32,11 +32,11 @@ function descriptografar() {
     '<textera readonly id="input-text">' +
     resultadoDescriptografia +
     "</textera>" +
-    '<button class="button-copiar" id="copiar" onclick="copiar()"><p>Copiar</p></button>';
+    '<button class="button-copiar" id="copiar" onclick="copiar()">Copiar</button>';
 }
 
 function copiar() {
-  var texto = document.getElementById("input-text");
+  let texto = document.getElementById("input-text");
 
   texto.select();
   document.execCommand("copy");
