@@ -86,7 +86,6 @@ body{
     border: none;
     outline: 0;
     padding: 1rem;
-    /* text-align: center; */
     text-transform: uppercase;
 }
 
@@ -98,7 +97,6 @@ body{
     margin-top: 20rem;
     width: auto;
     height: auto;
-    /* margin-left: 8rem; */
 }
 
 #output-saida{
@@ -214,7 +212,6 @@ body{
 /* Botão copiar só irá aparecer quando a menssagem for códificada */
 .button-copiar{
     box-sizing: border-box;
-    /* display: flex; */
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
@@ -326,12 +323,6 @@ footer{
         font-size: 0.9rem;
     }
     #output-saida{
-        /* width: 60%;
-        height: 65%;
-        margin-top: 15%;
-        margin-right: 3%;
-        margin: revert; */
-
         width: 16rem;
         height: 22rem;
         margin: revert;
@@ -386,28 +377,20 @@ footer{
         margin-top: -0.5rem;
         font-family: var(--font-primary);
     }
-    /* .button-copiar {
-        width: 13rem;
-        height: 2rem;
-        margin-left: 10%;
-        font-family: var(--font-primary);
-        cursor: pointer;
-    } */
     #copiar.button-copiar {
         width: 13rem;
         height: 2rem;
-        /* margin-left: -13%; */
         margin-top: auto;
         color: var(--cor-titulo);
         font-size: 0.8rem;
-        /* margin-top: -0.5rem; */
         font-family: var(--font-primary);
+        line-height: 10px;
+    }
     }
     #copiar.button-copiar p{
         font-size: 1rem;
     }
     .footer-content p{
-        /* width: 13rem; */
         font-family: var(--font-secundary);
         color: var(--cor-sociallist);
         font-size: 1rem;
@@ -427,104 +410,3 @@ footer{
     .social-list{
         margin-right: -6rem;
     }
-}
-
-
-/* @media (max-width: 900px) {
-    .header{
-        display: flex;
-        justify-content:left;
-        padding: 6%;
-    }
-    .header h1{
-        font-size: 1.9rem;
-    }
-    .header img{
-        max-width: 90px;
-        max-height: 40px;
-        width: auto;
-        height: auto;
-    }
-    .input-container .input{
-        width: 35rem;
-        height: 25rem;
-    }
-    .input-container{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        padding: 2% 0 0 12%;
-    }
-    #input-text{
-        width: 400px;
-        height: 330px;
-        font-size: 20px;
-    }
-    #output-saida{
-        width: 60%;
-        height: 65%;
-        margin-top: 15%;
-        margin-right: 3%;
-    }
-    #output-saida img{
-        max-width: 250px;
-        max-height: 200px;
-        width: auto;
-        height: auto;
-        margin-top: 4%;
-        margin-left: 25%;
-        margin: unset;
-    }
-    .btn-container{
-        width: 150px;
-        height: 50px;
-        margin-left: 5%;
-        margin-top: 5%;
-    }
-} */
-
-/* @media (max-width:600px){
-    #output-saida{
-       width: 60%;
-       height: 75%;
-       margin-top: 15%;
-    } */
- 
-    /* #input-text{
-       width: 200px;
-       height: 330px;
-       font-size: 20px;
-   } */
- 
-    /* #output-saida img{
-       max-width:200px;
-       max-height:150px;
-       width: auto;
-       height: auto;
-       margin-top: 4%;
-       margin-left: 5%;
-    } */
- 
-    /* .btn-container{
-       width: 200px;
-       flex-wrap: wrap;
-    } */
- 
-    /* .btn-container button{
-       width: 110px;
-       height: 50px;
-       margin-left: 30%;
-       margin-top: 5%;
- 
-    } */
- 
-    /* .input p{
-       font-size: 10px;
-    }
- 
-    .footer h3{
-       font-size: 14px;
-   }
-  */
- 
- /* } */
